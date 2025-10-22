@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TYLTY HUB - Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="content-container">
+            <!-- Left Side - Text Content -->
+            <div class="text-section">
+                
+                <h1 class="main-title">
+                    Múltiplas, odds altas, bets exclusivas e alavancagens em um só lugar
+                </h1>
+                
+                <button class="cta-button">
+                    Acesse grátis agora
+                </button>
+            </div>
+
+            <!-- Right Side - Image -->
+            <div class="image-section">
+                <div class="main-image">
+                    <img src="Img/CODIGUINHOS-DO-PADRINHO-2.png" alt="TYLTY HUB" class="hero-image">
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Form Section -->
+    <section id="form-section" class="form-section">
+        <div class="form-container">
+            <div class="form-header">
+                <h2>Cadastre-se gratuitamente</h2>
+                <p>Preencha os dados abaixo e comece sua jornada</p>
+            </div>
+            
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="fullName">Nome Completo</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+                    <span class="error-message" id="fullNameError"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Seu melhor e-mail</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <span class="error-message" id="emailError"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="whatsapp">Seu WhatsApp</label>
+                    <div class="input-wrapper">
+                        <i class="fab fa-whatsapp"></i>
+                        <input type="tel" id="whatsapp" name="whatsapp" placeholder="(11) 99999-9999" required>
+                    </div>
+                    <span class="error-message" id="whatsappError"></span>
+                </div>
+                
+                <button type="submit" class="submit-btn">
+                    <span>Cadastrar agora</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+                
+                <p class="privacy-text">
+                    Ao cadastrar-se, você concorda com nossa 
+                    <a href="#" class="privacy-link">Política de Privacidade</a>
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Logo -->
+    <footer class="footer">
+        <div class="footer-logo">
+            <span class="logo-text">TYLTY</span>
+            <span class="logo-hub">HUB</span>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
