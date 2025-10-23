@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrigado! - Codiguinhos do Padrinho</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Estilos específicos para a página de agradecimento */
+        body {
+            background: #0a0a0a;
+            color: white;
+            font-family: 'MarkPro', 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .thank-you-container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .thank-you-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .success-icon {
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(135deg, #ffae00, #ffb84d);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 40px;
+            animation: pulse 2s infinite;
+        }
+
+        .success-icon i {
+            font-size: 3rem;
+            color: white;
+        }
+
+        .thank-you-title {
+            font-size: 3rem;
+            font-weight: 800;
+            color: white;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .thank-you-subtitle {
+            font-size: 1.3rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        .whatsapp-section {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 40px;
+            margin: 40px 0;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .whatsapp-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 16px;
+        }
+
+        .whatsapp-description {
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .whatsapp-button {
+            background: linear-gradient(135deg, #ffae00, #ffb84d);
+            color: white;
+            border: none;
+            padding: 18px 36px;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            margin: 0 10px;
+            box-shadow: 0 4px 15px rgba(255, 174, 0, 0.3);
+        }
+
+        .whatsapp-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(255, 174, 0, 0.4);
+        }
+
+        .whatsapp-button i {
+            font-size: 1.5rem;
+        }
+
+        .back-to-home {
+            margin-top: 40px;
+        }
+
+        .back-button {
+            background: transparent;
+            color: #ffae00;
+            border: 2px solid #ffae00;
+            padding: 12px 24px;
+            border-radius: 25px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .back-button:hover {
+            background: #ffae00;
+            color: white;
+            border-color: #ffae00;
+        }
+
+
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .thank-you-content {
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .whatsapp-section {
+            animation: fadeInUp 0.8s ease-out 0.2s both;
+        }
+
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .thank-you-title {
+                font-size: 2.5rem;
+            }
+
+            .thank-you-subtitle {
+                font-size: 1.1rem;
+            }
+
+            .whatsapp-section {
+                padding: 30px 20px;
+            }
+
+            .whatsapp-button {
+                padding: 16px 28px;
+                font-size: 1.1rem;
+            }
+
+        }
+
+        @media (max-width: 480px) {
+            .thank-you-container {
+                padding: 20px 16px;
+            }
+
+            .thank-you-title {
+                font-size: 2rem;
+            }
+
+            .success-icon {
+                width: 100px;
+                height: 100px;
+            }
+
+            .success-icon i {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    
+
+    <!-- Main Content -->
+    <main class="thank-you-container">
+        <div class="thank-you-content">
+            <!-- Ícone de Sucesso -->
+            <div class="success-icon">
+                <i class="fas fa-check"></i>
+            </div>
+
+            <!-- Título -->
+            <h1 class="thank-you-title">Cadastro Realizado!</h1>
+            
+            <!-- Subtítulo -->
+            <p class="thank-you-subtitle">
+                Obrigado por se cadastrar no Codiguinhos do Padrinho! Você agora tem acesso exclusivo ao nosso conteúdo e comunidade.
+            </p>
+
+            <!-- Seção do WhatsApp -->
+            <div class="whatsapp-section">
+                <h2 class="whatsapp-title">🎉 RESGATE SEU CÓDIGO AGORA!</h2>
+                <p class="whatsapp-description">
+                    Fale com a gente no WhatsApp para resgatar seu código!
+                </p>
+                <a href="https://wa.me/5511999999999?text=Olá! Vim do site Codiguinhos do Padrinho e quero entrar no grupo exclusivo!" class="whatsapp-button" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    RESGATAR MEU CÓDIGO AGORA
+                </a>
+            </div>
+
+
+            
+        </div>
+    </main>
+
+    <!-- Footer Logo -->
+    
+</body>
+</html>

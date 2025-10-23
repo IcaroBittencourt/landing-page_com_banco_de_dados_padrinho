@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TYLTY HUB - Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Codiguinhos do Padrinho - Landing Page</title>
+    <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
@@ -13,72 +12,102 @@
     <!-- Main Content -->
     <main class="main-content">
         <div class="content-container">
-            <!-- Left Side - Text Content -->
-            <div class="text-section">
-                
-                <h1 class="main-title">
-                    Múltiplas, odds altas, bets exclusivas e alavancagens em um só lugar
-                </h1>
-                
-                <button class="cta-button">
-                    Acesse grátis agora
-                </button>
-            </div>
-
             <!-- Right Side - Image -->
             <div class="image-section">
                 <div class="main-image">
-                    <img src="Img/CODIGUINHOS-DO-PADRINHO---DESKTOP.png" alt="TYLTY HUB" class="hero-image">
                 </div>
-
             </div>
         </div>
     </main>
+
+    <!-- Copy Section -->
+    <section class="copy-section">
+        <div class="copy-content">
+                <div class="text-section">
+                    <p class="main-title">
+                        Essa é a sua chance de ganhar rodadas grátis! 
+                        <br>
+                        Muita gente já forrou com os <span class="highlight">códigos do Padrinho!</span>
+                        <br>
+                        Preencha os dados abaixo e resgate seu código <span class="highlight">100% de graça.</span>
+                    </p>
+                    
+                    <button class="cta-button">CADASTRAR AGORA →</button>
+                </div>
+        </div>
+    </section>
+
+    <!-- Animated Bar -->
+    <div class="animated-bar">
+        <div class="carousel-content">
+            <span class="carousel-text">CODIGUINHOS DO PADRINHO</span>
+            <span class="carousel-text-bold">RODADAS GRÁTIS</span>
+            <span class="carousel-text">CODIGUINHOS DO PADRINHO</span>
+            <span class="carousel-text-bold">RODADAS GRÁTIS</span>
+            <span class="carousel-text">CODIGUINHOS DO PADRINHO</span>
+            <span class="carousel-text-bold">RODADAS GRÁTIS</span>
+            <span class="carousel-text">CODIGUINHOS DO PADRINHO</span>
+            <span class="carousel-text-bold">RODADAS GRÁTIS</span>
+            <span class="carousel-text">CODIGUINHOS DO PADRINHO</span>
+            <span class="carousel-text-bold">RODADAS GRÁTIS</span>
+            <!-- Duplicação para loop infinito -->
+            <span class="carousel-text">CODIGUINHOS DO PADRINHO</span>
+            <span class="carousel-text-bold">RODADAS GRÁTIS</span>
+            <span class="carousel-text">CODIGUINHOS DO PADRINHO</span>
+            <span class="carousel-text-bold">RODADAS GRÁTIS</span>
+            <span class="carousel-text">CODIGUINHOS DO PADRINHO</span>
+            <span class="carousel-text-bold">RODADAS GRÁTIS</span>
+            <span class="carousel-text">CODIGUINHOS DO PADRINHO</span>
+            <span class="carousel-text-bold">RODADAS GRÁTIS</span>
+            <span class="carousel-text">CODIGUINHOS DO PADRINHO</span>
+            <span class="carousel-text-bold">RODADAS GRÁTIS</span>
+        </div>
+    </div>
 
     <!-- Form Section -->
     <section id="form-section" class="form-section">
         <div class="form-container">
             <div class="form-header">
-                <h2>Cadastre-se gratuitamente</h2>
-                <p>Preencha os dados abaixo e comece sua jornada</p>
+                <h2>Faça seu cadastro!</h2>
+                <p>Preencha os dados abaixo e resgate seu código!</p>
             </div>
             
-            <form id="contactForm" class="contact-form">
+            <form class="contact-form" id="contactForm">
                 <div class="form-group">
-                    <label for="fullName">Nome Completo</label>
+                    <label for="name">Nome completo</label>
                     <div class="input-wrapper">
-                        <i class="fas fa-user"></i>
-                        <input type="text" id="fullName" name="fullName" required>
+                        <i class="fas fa-user input-icon"></i>
+                        <input type="text" id="name" name="name" placeholder="Digite seu nome completo" required>
                     </div>
-                    <span class="error-message" id="fullNameError"></span>
+                    <span class="error-message"></span>
                 </div>
                 
                 <div class="form-group">
-                    <label for="email">Seu melhor e-mail</label>
+                    <label for="email">E-mail</label>
                     <div class="input-wrapper">
-                        <i class="fas fa-envelope"></i>
-                        <input type="email" id="email" name="email" required>
+                        <i class="fas fa-envelope input-icon"></i>
+                        <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
                     </div>
-                    <span class="error-message" id="emailError"></span>
+                    <span class="error-message"></span>
                 </div>
                 
                 <div class="form-group">
-                    <label for="whatsapp">Seu WhatsApp</label>
+                    <label for="phone">WhatsApp</label>
                     <div class="input-wrapper">
-                        <i class="fab fa-whatsapp"></i>
-                        <input type="tel" id="whatsapp" name="whatsapp" placeholder="(11) 99999-9999" required>
+                        <i class="fab fa-whatsapp input-icon"></i>
+                        <input type="tel" id="phone" name="phone" placeholder="(11) 99999-9999" maxlength="15" required>
                     </div>
-                    <span class="error-message" id="whatsappError"></span>
+                    <span class="error-message"></span>
                 </div>
                 
                 <button type="submit" class="submit-btn">
-                    <span>Cadastrar agora</span>
-                    <i class="fas fa-arrow-right"></i>
+                    <i class="fas fa-paper-plane"></i>
+                    RESGATAR MEU CÓDIGO
                 </button>
                 
                 <p class="privacy-text">
                     Ao cadastrar-se, você concorda com nossa 
-                    <a href="#" class="privacy-link">Política de Privacidade</a>
+                    <a href="https://apostatudo.bet.br/page/privacy" target="_blank" class="privacy-link">Política de Privacidade</a>
                 </p>
             </form>
         </div>
@@ -86,12 +115,11 @@
 
     <!-- Footer Logo -->
     <footer class="footer">
-        <div class="footer-logo">
-            <span class="logo-text">TYLTY</span>
-            <span class="logo-hub">HUB</span>
+        <div class="footer-content">
+            <img src="assets/TAG-APOSTA-TUDO.png" alt="Tag Aposta Tudo" class="footer-image">
         </div>
     </footer>
     
-    <script src="script.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
